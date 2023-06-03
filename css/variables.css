@@ -1,9 +1,8 @@
 :root {
   --dark-green: #2a3027;
-  --light-green: rgb(206, 235, 190);
-  --light-green-opacity: rgba(206, 235, 190, 0.5);
-  --light-pink: #fccff3aa;
-  --dark-pink: #450151;
+  --light-green: rgb(238, 255, 227);
+  --light-green-opacity: rgb(238, 255, 227, 0.5);
   --pink: #fa58c7;
-  --pink-opacity: #fa58c72f;
+  --pink-opacity: #fa58c707;
+  --deep-pink: #ce008d;
 }
