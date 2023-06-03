@@ -1,21 +1,37 @@
 @import "./variables.css";
 
+/*Layout*/
 body {
   margin: 0;
 }
 
-header {
-  background-color: var(--light-green);
-  color: var(--dark-green);
+img {
+  width: 100%;
+  margin: 0;
+}
+
+header,
+footer {
+  background-color: var(--light-green-opacity);
+  color: var(--pink);
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: center;
+}
+
+header {
+  flex-direction: column;
+}
+
+footer {
+  display: flex;
+  padding: 20px 0px;
 }
 
 nav ul {
   display: flex;
   flex-direction: row;
-  margin: 0px 0px 20px 0px;
+  margin: 30px 0px 30px 0px;
   padding-left: 0px;
 }
 
@@ -28,15 +44,163 @@ nav a {
   color: var(--dark-green);
   text-transform: uppercase;
   font-weight: bold;
-  font-family: Arial, Helvetica, sans-serif;
+  transition: 0.7s ease;
+  font-size: 1em;
 }
 
-a {
-  text-decoration: none;
+nav a:hover {
+  text-decoration: underline;
+  font-size: 1.1em;
 }
 
 h1,
-h2 {
+h2,
+a {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3 {
   text-transform: uppercase;
-  font-family: "Times New Roman", Times, serif;
+}
+
+/*Intro*/
+#intro h1 {
+  color: var(--dark-green);
+}
+#intro {
+  background: var(-white);
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0px 40px 0px;
+}
+
+#intro img {
+  max-width: 300px;
+  border-radius: 50%;
+  box-shadow: 1px 1px 8px 1px var(--dark-green);
+}
+
+.intro-content {
+  margin-left: 10px;
+  max-width: 300px;
+}
+
+/*About Me*/
+#about h2 {
+  color: var(--dark-green);
+}
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(white);
+  width: 100%;
+}
+
+/* My projects */
+#myProjects h2 {
+  color: var(--dark-pink);
+}
+#myProjects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--pink-opacity);
+  width: 100%;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  padding: 10px 30px 30px 30px;
+}
+
+.card {
+  /* box-shadow: 1px 1px 8px 1px #c5c4c4; */
+  /* border: 1px solid var(--light-green-opacity); */
+  border-radius: 5px;
+  background: white;
+  max-width: 700px;
+}
+
+.card-content {
+  padding: 0px 20px 20px 20px;
+}
+
+.card img {
+  border-radius: 5px 5px 0px 0px;
+}
+
+#myProjects .cta {
+  background: linear-gradient(90deg, var(--pink), transparent)
+    var(--light-green);
+  color: white;
+  box-shadow: 1px 1px 8px 1px var(--light-green-opacity);
+}
+
+#myProjects .cta:hover,
+.cta:focus {
+  background-color: var(--pink);
+  /* background-color: var(--pink); */
+  /* background-color: #fa58c7; */
+  color: #fff;
+  /* transition: 0.3s ease; */
+}
+
+/*Contact*/
+#contact h2 {
+  color: var(--dark-green);
+}
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background: white;
+}
+
+#contact .card {
+  background: var(--light-green-opacity);
+  color: var(--dark-green);
+}
+
+/*Ui*/
+.cta {
+  font-size: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 100%;
+  max-width: 200px;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 25px;
+  text-align: center;
+  transition: background-color 1s;
+}
+
+.cta-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+@media (min-width: 800px) {
+  .card-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  nav a {
+    font-size: 1.2em;
+  }
+
+  nav a:hover {
+    font-size: 1.3em;
+  }
 }

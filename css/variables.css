@@ -1,6 +1,9 @@
 :root {
-  --dark-green: #535e4c;
-  --light-green: rgba(206, 235, 190, 0.5);
-  --dark-purple: #5a4761;
-  --light-purple: rgba(228, 188, 235, 0.5);
+  --dark-green: #2a3027;
+  --light-green: rgb(206, 235, 190);
+  --light-green-opacity: rgba(206, 235, 190, 0.5);
+  --light-pink: #fccff3aa;
+  --dark-pink: #450151;
+  --pink: #fa58c7;
+  --pink-opacity: #fa58c72f;
 }
