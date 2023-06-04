@@ -30,12 +30,14 @@ footer {
   display: flex;
   padding: 20px 0px;
 }
+ul {
+  padding-left: 0px;
+}
 
 nav ul {
   display: flex;
   flex-direction: row;
   margin: 30px 0px 30px 0px;
-  padding-left: 0px;
 }
 
 nav li {
@@ -70,7 +72,8 @@ h3 {
 }
 
 .text-width {
-  max-width: 700px;
+  max-width: 500px;
+  padding: 0px 15px;
 }
 
 p {
@@ -78,45 +81,46 @@ p {
   line-height: 1.5;
 }
 
-/*Intro*/
-#intro h1 {
+/*About Me*/
+#about h1 {
   color: var(--dark-green);
 }
-#intro {
+#about {
   background: var(--light-green);
   width: 100%;
   display: flex;
-  flex-direction: row-reverse;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
   min-height: 100vh;
-  /* padding: 225px 0px; */
 }
 
-#intro img {
+#about img {
   max-width: 300px;
   border-radius: 50%;
+  margin: 20px;
   box-shadow: 1px 1px 8px 1px var(--dark-green);
 }
 
-.intro-content {
-  margin-left: 20px;
-  max-width: 400px;
-}
-
-/*About Me*/
-#about h2 {
-  color: var(--dark-green);
-  text-align: center;
-}
-
-#about {
+.about-content {
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
-  background: var(--pink-opacity);
-  width: 100%;
-  min-height: 100vh;
+  max-width: 400px;
+  margin: 100px 10px 10px 10px;
+}
+
+#about .cta {
+  background: linear-gradient(to bottom right, var(--pink), transparent)
+    var(--light-pink);
+  color: white;
+  box-shadow: 1px 1px 8px 1px var(--light-green-opacity);
+}
+
+#about .cta:hover,
+#about .cta:focus {
+  background-color: var(--deep-pink);
+  color: #fff;
 }
 
 /* My projects */
@@ -171,15 +175,15 @@ p {
 }
 
 #myProjects .cta {
-  background: linear-gradient(90deg, var(--pink), transparent)
-    var(--light-green);
+  background: linear-gradient(to bottom right, var(--pink), transparent)
+    var(--light-pink);
   color: white;
   box-shadow: 1px 1px 8px 1px var(--light-green-opacity);
 }
 
 #myProjects .cta:hover,
 #myProjects .cta:focus {
-  background-color: var(--pink);
+  background-color: var(--deep-pink);
   color: #fff;
 }
 
@@ -204,26 +208,35 @@ p {
 .contact-info {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
-.some-wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 10px;
+.some {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.some li {
+  display: block;
+  align-items: baseline;
+  padding: 20px;
 }
 
 .some a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   color: var(--dark-green);
   font-weight: bold;
-  text-transform: uppercase;
+
   transition: 0.7s ease;
 }
 
 .some a:hover,
 .some a:focus {
-  color: var(--pink);
+  color: var(--deep-pink);
 }
 
 /*Ui*/
@@ -233,24 +246,45 @@ p {
   text-transform: uppercase;
   width: 100%;
   max-width: 200px;
+  margin: 5px;
   padding: 10px;
   box-sizing: border-box;
-  border-radius: 25px;
+  border-radius: 5px;
   text-align: center;
   transition: background-color 1s;
 }
 
 .cta-wrapper {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 i {
   font-size: 3em;
 }
 
+@media (min-width: 550px) {
+  .some {
+    flex-direction: row;
+  }
+}
+
 @media (min-width: 800px) {
+  #about {
+    justify-content: center;
+    flex-direction: row-reverse;
+  }
+
+  .about-content {
+    margin: 20px;
+  }
+
+  #about img {
+    margin: 0px;
+  }
+
   nav a {
     font-size: 1.3em;
   }
@@ -271,5 +305,10 @@ i {
 @media (min-width: 1030px) {
   .card-grid {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .cta-wrapper {
+    flex-direction: row;
+    justify-content: space-evenly;
   }
 }
