@@ -47,6 +47,7 @@ nav li {
 
 nav a {
   color: var(--dark-green);
+  font-family: Georgia, "Times New Roman", Times, serif;
   text-transform: uppercase;
   font-weight: bold;
   transition: 0.7s ease;
@@ -55,20 +56,31 @@ nav a {
 
 nav a:hover {
   font-size: 1.1em;
+  color: var(--deep-pink);
 }
 
 h1,
 h2,
-a,
+h3,
 footer {
   text-decoration: none;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 h1,
 h2,
 h3 {
   text-transform: uppercase;
+}
+
+a,
+footer,
+p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
 }
 
 .text-width {
@@ -170,21 +182,9 @@ p {
 
 .card-content {
   display: grid;
-  gap: 20px;
-  padding: 0px 10px 20px 10px;
-}
-
-#myProjects .cta {
-  background: linear-gradient(to bottom right, var(--pink), transparent)
-    var(--light-pink);
-  color: white;
-  box-shadow: 1px 1px 8px 1px var(--light-green-opacity);
-}
-
-#myProjects .cta:hover,
-#myProjects .cta:focus {
-  background-color: var(--deep-pink);
-  color: #fff;
+  gap: 10px;
+  justify-content: space-around;
+  padding: 20px;
 }
 
 /*Contact*/
@@ -252,6 +252,16 @@ p {
   border-radius: 5px;
   text-align: center;
   transition: background-color 1s;
+  background: linear-gradient(to bottom right, var(--deep-pink), transparent)
+    var(--light-pink);
+  color: white;
+  box-shadow: 1px 1px 8px 1px var(--light-green-opacity);
+}
+
+.cta:hover,
+.cta:focus {
+  background-color: var(--deep-pink);
+  color: #fff;
 }
 
 .cta-wrapper {
@@ -267,7 +277,9 @@ i {
 
 @media (min-width: 550px) {
   .some {
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
   }
 }
 
