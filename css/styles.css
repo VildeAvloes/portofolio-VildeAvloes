@@ -154,7 +154,8 @@ p {
 }
 
 .card {
-  box-shadow: 1px 1px 8px 1px var(--light-blue);
+  box-shadow: 1px 1px 8px 1px var(--ligGHT);
+
   background: white;
   max-width: 600px;
 }
@@ -260,6 +261,10 @@ i {
 }
 
 @media (min-width: 550px) {
+  nav li {
+    margin: 0px 20px;
+  }
+
   .some {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
