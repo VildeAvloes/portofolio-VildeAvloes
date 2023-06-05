@@ -1,10 +1,10 @@
 :root {
   --dark-green: #2a3027;
-  --light-green: rgb(238, 250, 229);
+  --light-green: #eefae5;
   /* --light-green: rgb(238, 255, 227); */
   --light-green-opacity: rgb(238, 255, 227, 0.5);
   --pink: #fa58c7;
-  --pink-opacity: #fa58c707;
   --deep-pink: #ce008d;
-  --light-pink: #ffb6e8;
+  /* --light-pink: #ffb6e8; */
+  --deep-purple: #5f1773;
 }
