@@ -47,7 +47,6 @@ nav li {
 
 nav a {
   color: var(--dark-green);
-  font-family: Georgia, "Times New Roman", Times, serif;
   text-transform: uppercase;
   font-weight: bold;
   transition: 0.7s ease;
@@ -65,7 +64,7 @@ h2,
 h3,
 footer {
   text-decoration: none;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: var(--font-main);
 }
 
 h1,
@@ -75,9 +74,11 @@ h3 {
 }
 
 a,
-footer,
+footer {
+  font-family: var(--font-main);
+}
 p {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-second);
 }
 
 a {
@@ -105,6 +106,7 @@ p {
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
+  text-align: center;
 }
 
 #about img {
@@ -153,13 +155,13 @@ p {
 
 .card {
   box-shadow: 1px 1px 8px 1px #c5c4c4;
-  border-radius: 5px;
+  /* border-radius: 5px; */
   background: white;
   max-width: 600px;
 }
-.card img {
+/* .card img {
   border-radius: 5px 5px 0px 0px;
-}
+} */
 
 .card h3,
 .card p {
@@ -216,7 +218,6 @@ p {
   align-items: center;
   color: var(--dark-green);
   font-weight: bold;
-
   transition: 0.7s ease;
 }
 
@@ -238,16 +239,16 @@ p {
   box-sizing: border-box;
   border-radius: 5px;
   text-align: center;
-  transition: background-color 1s;
-  background: linear-gradient(to right, var(--deep-purple), transparent)
-    var(--deep-pink);
+  transition: background-color 1s ease;
+  background: linear-gradient(to right, var(--deep-pink), transparent)
+    var(--deep-purple);
   color: white;
   box-shadow: 1px 1px 8px 1px var(--light-green-opacity);
 }
 
 .cta:hover,
 .cta:focus {
-  background-color: var(--deep-purple);
+  background-color: var(--deep-pink);
   color: #fff;
 }
 

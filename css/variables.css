@@ -1,10 +1,12 @@
 :root {
   --dark-green: #2a3027;
   --light-green: #eefae5;
-  /* --light-green: rgb(238, 255, 227); */
   --light-green-opacity: rgb(238, 255, 227, 0.5);
   --pink: #fa58c7;
   --deep-pink: #ce008d;
-  /* --light-pink: #ffb6e8; */
   --deep-purple: #5f1773;
+  --font-main: "Montserrat", sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+  --font-second: "Courier New", Courier, monospace;
 }
+
+/* Georgia, "Times New Roman", Times, serif; */
