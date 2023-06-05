@@ -12,8 +12,8 @@ img {
 
 header,
 footer {
-  background-color: var(--light-green);
-  color: var(--dark-green);
+  background-color: var(--light-blue);
+  color: var(--dark-blue);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -46,7 +46,7 @@ nav li {
 }
 
 nav a {
-  color: var(--dark-green);
+  color: var(--dark-blue);
   text-transform: uppercase;
   font-weight: bold;
   transition: 0.7s ease;
@@ -91,16 +91,16 @@ a {
 }
 
 p {
-  color: var(--dark-green);
+  color: var(--dark-blue);
   line-height: 1.5;
 }
 
 /*About Me*/
 #about h1 {
-  color: var(--dark-green);
+  color: var(--dark-blue);
 }
 #about {
-  background: var(--light-green);
+  background: var(--light-blue);
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -125,7 +125,7 @@ p {
 
 /* My projects */
 #myProjects h2 {
-  color: var(--deep-purple);
+  color: var(--dark-blue);
   text-align: center;
 }
 
@@ -154,18 +154,14 @@ p {
 }
 
 .card {
-  box-shadow: 1px 1px 8px 1px #c5c4c4;
-  /* border-radius: 5px; */
+  box-shadow: 1px 1px 8px 1px var(--light-blue);
   background: white;
   max-width: 600px;
 }
-/* .card img {
-  border-radius: 5px 5px 0px 0px;
-} */
 
 .card h3,
 .card p {
-  color: var(--dark-green);
+  color: var(--dark-blue);
 }
 
 .card-content {
@@ -177,7 +173,7 @@ p {
 
 /*Contact*/
 #contact h2 {
-  color: var(--dark-green);
+  color: var(--dark-blue);
   width: 100%;
   text-align: center;
   margin: 0;
@@ -188,7 +184,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: var(--light-green);
+  background: var(--light-blue);
   width: 100%;
   min-height: 100vh;
 }
@@ -216,7 +212,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: var(--dark-green);
+  color: var(--dark-blue);
   font-weight: bold;
   transition: 0.7s ease;
 }
@@ -241,9 +237,9 @@ p {
   text-align: center;
   transition: background-color 1s ease;
   background: linear-gradient(to right, var(--deep-pink), transparent)
-    var(--deep-purple);
+    var(--dark-blue);
   color: white;
-  box-shadow: 1px 1px 8px 1px var(--light-green-opacity);
+  box-shadow: 1px 1px 8px 1px var(--light-blue-opacity);
 }
 
 .cta:hover,
