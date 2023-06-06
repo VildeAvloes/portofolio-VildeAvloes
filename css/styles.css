@@ -154,8 +154,7 @@ p {
 }
 
 .card {
-  box-shadow: 1px 1px 8px 1px var(--ligGHT);
-
+  box-shadow: 1px 1px 8px 1px var(--light-blue);
   background: white;
   max-width: 600px;
 }
@@ -166,10 +165,19 @@ p {
 }
 
 .card-content {
-  display: grid;
+  flex: wrap column;
+  flex-direction: column;
+  /* display: grid;
   gap: 10px;
-  justify-content: space-around;
+  justify-content: space-around; */
   padding: 20px;
+}
+.card h3 {
+  min-height: 50px;
+}
+
+.card p {
+  min-height: 170px;
 }
 
 /*Contact*/
@@ -287,10 +295,6 @@ i {
   }
 
   nav a {
-    font-size: 1.3em;
-  }
-
-  nav a:hover {
     font-size: 1.4em;
   }
 
@@ -301,15 +305,15 @@ i {
   h2 {
     font-size: 1.8em;
   }
-}
-
-@media (min-width: 1030px) {
-  .card-grid {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
 
   .cta-wrapper {
     flex-direction: row;
     justify-content: space-evenly;
+  }
+}
+
+@media (min-width: 1130px) {
+  .card-grid {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
