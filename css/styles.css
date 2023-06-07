@@ -37,12 +37,12 @@ ul {
 nav ul {
   display: flex;
   flex-direction: row;
-  margin: 30px 0px 30px 0px;
+  margin: 32px 0px 32px 0px;
 }
 
 nav li {
   display: block;
-  margin: 0px 10px;
+  margin: 0px 12px;
 }
 
 nav a {
@@ -87,7 +87,7 @@ a {
 
 .text-width {
   max-width: 500px;
-  padding: 0px 15px;
+  padding: 0px 16px;
 }
 
 p {
@@ -98,6 +98,7 @@ p {
 /*About Me*/
 #about h1 {
   color: var(--dark-blue);
+  padding-top: 100px;
 }
 #about {
   background: var(--light-blue);
@@ -120,13 +121,14 @@ p {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  margin: 100px 10px 10px 10px;
+  margin: 0px 12px 12px 12px;
 }
 
 /* My projects */
 #myProjects h2 {
   color: var(--dark-blue);
   text-align: center;
+  padding-top: 100px;
 }
 
 #myProjects {
@@ -141,8 +143,8 @@ p {
 .card-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 30px;
-  padding: 30px;
+  gap: 32px;
+  padding: 32px;
 }
 
 .content-wrapper {
@@ -173,20 +175,18 @@ p {
   padding: 20px;
 }
 .card h3 {
-  min-height: 50px;
+  min-height: 52px;
 }
 
 .card p {
-  min-height: 170px;
+  min-height: 172px;
 }
 
 /*Contact*/
 #contact h2 {
   color: var(--dark-blue);
-  width: 100%;
   text-align: center;
-  margin: 0;
-  padding: 20px 0px;
+  padding-top: 100px;
 }
 
 #contact {
@@ -239,10 +239,10 @@ p {
   text-transform: uppercase;
   width: 100%;
   max-width: 200px;
-  margin: 5px;
-  padding: 10px;
+  margin: 4px;
+  padding: 12px;
   box-sizing: border-box;
-  border-radius: 5px;
+  border-radius: 4px;
   text-align: center;
   transition: background-color 1s ease;
   background: linear-gradient(to right, var(--deep-pink), transparent)
@@ -276,11 +276,17 @@ i {
   .some {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px;
+    gap: 12px;
   }
 }
 
 @media (min-width: 800px) {
+  #about h1,
+  #myProjects h2,
+  #contact h2 {
+    padding-top: 0px;
+  }
+
   #about {
     justify-content: center;
     flex-direction: row-reverse;
