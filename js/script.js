@@ -1,11 +1,18 @@
-function hamburgerMenu() {
-  const hamburger = document.querySelector(".hamburger");
-  const navMenu = document.querySelector(".nav-menu");
+const hamburgerButton = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+let listItem = document.querySelectorAll(".nav-menu li a");
 
-  hamburger.addEventListener("click", () => {
-    console.log("klikk");
+function toggleMenu() {
+  hamburgerButton.addEventListener("click", () => {
     navMenu.classList.toggle("active");
+  });
+
+  listItem.forEach((a) => {
+    a.addEventListener("click", () => {
+      // e.preventDefault();
+      navMenu.classList.remove("active");
+    });
   });
 }
 
-hamburgerMenu();
+toggleMenu();
