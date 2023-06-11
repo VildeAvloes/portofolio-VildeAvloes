@@ -6,7 +6,7 @@
 
 ## Description
 
-This is the portofolio page of Vilde Avløs. It a single page displaying the three different projects that I have worked on during my course at Noroff. The portofolio contans of three different projects I have worked on.
+This is the portofolio page of Vilde Avløs. It a single page displaying the three different projects that I have worked on during my course at Noroff and I have used GitHub pages to host the website. The portofolio contans of three different projects I have worked on. 
 _The following project are:_
 
 - [Project Exam 1](https://github.com/Noroff-FEU-Assignments/project-exam-1-VildeAvloes)
@@ -19,6 +19,10 @@ _Built With_
 - CSS
 - JavaScript
 
+### API 
+I have not used an API to build the site.
+
+
 ## Getting Started
 
 ### Installing
@@ -28,8 +32,8 @@ You only need to clone the project and you can do that with the method you prefe
 
 - Through commands: `git clone git@github.com:VildeAvloes/portofolio-VildeAvloes`
 - Through Github
-  - First option: Clone > Open with GitHub Desktop > save and open in your preferred code editoror
-  - Second option: Clone > Download Zip > Save and open in preferred code editor
+  - First option: Clone > Open with GitHub Desktop > save and open in your preferred code editor.
+  - Second option: Clone > Download Zip > Save and open in preferred code editor.
 
 ### Running
 
