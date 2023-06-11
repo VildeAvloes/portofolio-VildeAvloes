@@ -280,13 +280,16 @@ i {
     font-size: 1.2em;
   }
 
-  h1,
   #contact h2 {
     padding-top: 0px;
   }
 }
 
 @media (min-width: 800px) {
+  h1 {
+    padding-top: 0px;
+  }
+
   nav li {
     padding: 0px 24px;
   }
