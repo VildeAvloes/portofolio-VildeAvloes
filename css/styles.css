@@ -79,6 +79,7 @@ nav a:focus {
 .hamburger {
   border: none;
   background-color: transparent;
+  color: var(--dark-blue);
 }
 
 h1,
