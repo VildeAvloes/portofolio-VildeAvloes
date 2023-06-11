@@ -9,7 +9,6 @@ function toggleMenu() {
 
   listItem.forEach((a) => {
     a.addEventListener("click", () => {
-      // e.preventDefault();
       navMenu.classList.remove("active");
     });
   });
