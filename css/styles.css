@@ -1,7 +1,6 @@
 @import "./variables.css";
 
 /*Layout*/
-
 body {
   margin: 0;
 }
@@ -83,26 +82,43 @@ nav a:focus {
   color: var(--dark-blue);
 }
 
+#about,
+#myProjects,
+#contact {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+/*Text*/
 h1,
-h2,
-h3,
-footer {
-  text-decoration: none;
-  font-family: var(--font-main);
+h2 {
+  padding-top: 100px;
 }
 
 h1,
 h2,
 h3 {
+  font-family: var(--font-main);
+  color: var(--dark-blue);
   text-transform: uppercase;
 }
 
-a,
-footer {
+h2 {
+  text-align: center;
+  padding-top: 100px;
+}
+
+a {
   font-family: var(--font-main);
 }
 p {
   font-family: var(--font-second);
+  color: var(--dark-blue);
+  line-height: 1.5;
 }
 
 a {
@@ -112,147 +128,6 @@ a {
 .text-width {
   max-width: 500px;
   padding: 0px 16px;
-}
-
-p {
-  color: var(--dark-blue);
-  line-height: 1.5;
-}
-
-/*About Me*/
-#about h1 {
-  color: var(--dark-blue);
-  padding-top: 100px;
-}
-#about {
-  background: var(--light-blue);
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 100vh;
-  text-align: center;
-}
-
-#about img {
-  max-width: 300px;
-  border-radius: 50%;
-  margin: 20px;
-}
-
-.about-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  margin: 0px 12px 12px 12px;
-}
-
-/* My projects */
-#myProjects h2 {
-  color: var(--dark-blue);
-  text-align: center;
-  padding-top: 100px;
-}
-
-#myProjects {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: white;
-  width: 100%;
-  min-height: 100vh;
-}
-
-.card-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 32px;
-  padding: 32px;
-}
-
-.content-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  min-height: 100%;
-  margin: auto;
-}
-
-.card {
-  box-shadow: 1px 1px 8px 1px var(--light-blue);
-  background: white;
-  max-width: 600px;
-}
-
-.card h3,
-.card p {
-  color: var(--dark-blue);
-}
-
-.card-content {
-  flex: wrap column;
-  flex-direction: column;
-  /* display: grid;
-  gap: 10px;
-  justify-content: space-around; */
-  padding: 20px;
-}
-.card h3 {
-  min-height: 52px;
-}
-
-.card p {
-  min-height: 172px;
-}
-
-/*Contact*/
-#contact h2 {
-  color: var(--dark-blue);
-  text-align: center;
-  padding-top: 100px;
-}
-
-#contact {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: var(--light-blue);
-  width: 100%;
-  min-height: 100vh;
-}
-
-.contact-info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.some {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
-.some li {
-  align-items: baseline;
-  padding: 20px;
-}
-
-.some a {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: var(--dark-blue);
-  font-weight: bold;
-  transition: 0.7s ease;
-}
-
-.some a:hover,
-.some a:focus {
-  color: var(--deep-pink);
-  transform: scale(1.1);
 }
 
 /*Ui*/
@@ -291,6 +166,102 @@ i {
   font-size: 3em;
 }
 
+/*About Me*/
+#about {
+  background: var(--light-blue);
+}
+
+#about img {
+  max-width: 300px;
+  border-radius: 50%;
+  margin: 20px;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0px 12px 12px 12px;
+}
+
+/* My projects */
+#myProjects {
+  background: white;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  padding: 32px;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  min-height: 100%;
+  margin: auto;
+}
+
+.card {
+  box-shadow: 1px 1px 8px 1px var(--light-blue);
+  background: white;
+  max-width: 600px;
+}
+
+.card-content {
+  flex: wrap column;
+  flex-direction: column;
+  padding: 20px;
+}
+.card h3 {
+  min-height: 52px;
+}
+
+.card p {
+  min-height: 172px;
+}
+
+/*Contact*/
+#contact {
+  background: var(--light-blue);
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.some {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.some li {
+  align-items: baseline;
+  padding: 20px;
+}
+
+.some a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--dark-blue);
+  font-weight: bold;
+  transition: 0.7s ease;
+}
+
+.some a:hover,
+.some a:focus {
+  color: var(--deep-pink);
+  transform: scale(1.1);
+}
+
 @media (min-width: 550px) {
   .some {
     display: grid;
@@ -300,6 +271,26 @@ i {
 }
 
 @media (min-width: 800px) {
+  #contact h2 {
+    padding-top: 0px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.8em;
+  }
+
+  nav a {
+    font-size: 1.4em;
+  }
+
+  nav li {
+    padding: 0px 16px;
+  }
+
   .hamburger,
   .hamburger button {
     display: none;
@@ -316,16 +307,6 @@ i {
     margin: 32px 0px 32px 0px;
   }
 
-  nav li {
-    padding: 0px 16px;
-  }
-
-  #about h1,
-  #myProjects h2,
-  #contact h2 {
-    padding-top: 0px;
-  }
-
   #about {
     justify-content: center;
     flex-direction: row-reverse;
@@ -337,18 +318,6 @@ i {
 
   #about img {
     margin: 0px;
-  }
-
-  nav a {
-    font-size: 1.4em;
-  }
-
-  h1 {
-    font-size: 2em;
-  }
-
-  h2 {
-    font-size: 1.8em;
   }
 
   .cta-wrapper {
