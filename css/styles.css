@@ -76,7 +76,8 @@ nav a:focus {
   color: var(--deep-pink);
 }
 
-.hamburger {
+.hamburger,
+.hamburger button {
   border: none;
   background-color: transparent;
   color: var(--dark-blue);
