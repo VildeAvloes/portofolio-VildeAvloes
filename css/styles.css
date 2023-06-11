@@ -54,8 +54,11 @@ ul {
   padding: 0px;
 }
 
-nav li {
+li {
   display: block;
+}
+
+nav li {
   padding: 50px;
 }
 
@@ -231,7 +234,6 @@ p {
 }
 
 .some li {
-  display: block;
   align-items: baseline;
   padding: 20px;
 }
@@ -296,7 +298,8 @@ i {
 }
 
 @media (min-width: 800px) {
-  .hamburger {
+  .hamburger,
+  .hamburger button {
     display: none;
   }
 
