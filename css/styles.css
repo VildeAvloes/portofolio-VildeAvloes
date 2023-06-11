@@ -286,10 +286,6 @@ i {
 }
 
 @media (min-width: 800px) {
-  h1 {
-    padding-top: 0px;
-  }
-
   nav li {
     padding: 0px 24px;
   }
