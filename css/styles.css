@@ -31,18 +31,18 @@ header {
 }
 
 .nav-menu {
-  position: fixed;
   background-color: var(--light-blue);
-  right: 0;
-  top: 82px;
-  z-index: 1000;
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  align-items: center;
   transition: 0.5s;
   left: 100%;
   width: 100%;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  right: 0;
+  top: 82px;
+  z-index: 1000;
 }
 
 .nav-menu.active {
@@ -62,11 +62,12 @@ nav li {
 }
 
 nav a {
+  display: flex;
   color: var(--dark-blue);
   text-transform: uppercase;
   font-weight: bold;
   transition: 0.7s ease;
-  font-size: 1em;
+  font-size: 1.2em;
 }
 
 nav a:hover,
@@ -114,15 +115,13 @@ h2 {
 
 a {
   font-family: var(--font-main);
+  text-decoration: none;
 }
+
 p {
   font-family: var(--font-second);
   color: var(--dark-blue);
   line-height: 1.5;
-}
-
-a {
-  text-decoration: none;
 }
 
 .text-width {
@@ -217,10 +216,12 @@ i {
   padding: 20px;
 }
 .card h3 {
+  text-align: start;
   min-height: 52px;
 }
 
 .card p {
+  text-align: start;
   min-height: 172px;
 }
 
@@ -263,18 +264,6 @@ i {
 }
 
 @media (min-width: 550px) {
-  .some {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 12px;
-  }
-}
-
-@media (min-width: 800px) {
-  #contact h2 {
-    padding-top: 0px;
-  }
-
   h1 {
     font-size: 2em;
   }
@@ -287,8 +276,19 @@ i {
     font-size: 1.4em;
   }
 
+  p {
+    font-size: 1.2em;
+  }
+
+  h1,
+  #contact h2 {
+    padding-top: 0px;
+  }
+}
+
+@media (min-width: 800px) {
   nav li {
-    padding: 0px 16px;
+    padding: 0px 24px;
   }
 
   .hamburger,
@@ -323,6 +323,12 @@ i {
   .cta-wrapper {
     flex-direction: row;
     justify-content: space-evenly;
+  }
+
+  .some {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
   }
 }
 

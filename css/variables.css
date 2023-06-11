@@ -1,13 +1,7 @@
 :root {
   --dark-blue: #021b4a;
   --light-blue: #e4ecfa;
-  /* --dark-green: #2a3027;
-  --light-green: #eefae5;
-  --light-green-opacity: rgb(238, 255, 227, 0.5); */
-  --light-pink: #fce4f4;
-  --pink: #fa58c7;
   --deep-pink: #ce008d;
-  --deep-purple: #5f1773;
   --font-main: "Montserrat", sans-serif, Verdana, Geneva, Tahoma, sans-serif;
   --font-second: "Courier New", Courier, monospace;
 }
